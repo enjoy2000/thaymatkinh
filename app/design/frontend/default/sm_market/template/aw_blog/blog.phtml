@@ -1,0 +1,52 @@
+<?php $posts = $this->getPosts(); ?>
+<div class="page-title">
+    <h1><?php echo $this->__('Tin Tức') ?></h1>
+</div>
+<div id="messages_product_view">
+    <?php Mage::app()->getLayout()->getMessagesBlock()->setMessages(Mage::getSingleton('customer/session')->getMessages(true)); ?>
+    <?php echo Mage::app()->getLayout()->getMessagesBlock()->getGroupedHtml(); ?>
+</div>
+<div class="category-products">
+    <div class="products-grid">
+        <div class="row">
+        <?php $i=1; foreach ($posts as $post): ?>
+            <div class="item post col-lg-3">
+                <?php
+                $content = $post->getPostContent();
+                ?>
+                <div class="post-image">
+                <?php
+                preg_match('/(<img[^>]+>)/i', $content, $matches);
+                if(count($matches)>0)
+                {
+                    echo preg_replace(array('/height=("[^"]*")/i', '/width=("[^"]*")/i'), array('', ''), $matches[0]);
+                }
+                ?>
+                </div>
+                <div class="create-time"><?php echo $post->getCreatedTime(); ?></div>
+                <h3 class="postTitle">
+                    <a title="<?php echo $post->getTitle(); ?>" href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a>
+
+                </h3>
+                <div class="postContent">
+                <?php
+                $content = preg_replace("/<img[^>]+\>/i", "(image) ", $content);
+                $content = strip_tags($content);
+                $content = Mage::helper('core/string')->truncate($content, 200, '...', $_remainder, false);
+                echo $content;
+                ?>
+                </div>
+                <div class="more">
+                    <a title="<?php echo $post->getTitle(); ?>" href="<?php echo $post->getAddress(); ?>" >
+                        <i class="fa fa-check"></i><?php echo $this->__('Xem thêm') ?>
+                    </a>
+                </div>
+            </div>
+            <?php if($i%4 == 0 && $i != $posts->count()): ?>
+                </div><div class="row">
+            <?php endif; ?>
+        <?php $i++; endforeach; ?>
+        </div>
+    </div>
+</div>
+<?php echo $this->getChildHtml('aw_blog_comments_toolbar'); ?>

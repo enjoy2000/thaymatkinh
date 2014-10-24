@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <sales>
+            <disable>1</disable>
+        </sales>
+        <customer>
+            <disable>1</disable>
+        </customer>
+    </menu>
+</config>
