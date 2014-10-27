@@ -21,7 +21,7 @@ if ($_productCollection->count()):
             $special_from_date = $_product->getSpecialFromDate();
             $special_to_date = $_product->getSpecialToDate();
             ?>
-            <div class="item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="item col-lg-2 col-md-2 col-sm-4 col-xs-12">
                 <div class="item-inner">
 
                     <div class="product-image">
@@ -108,7 +108,7 @@ if ($_productCollection->count()):
 
                 </div>
             </div>
-            <?php if ($_iterator % 3 == 0 && $_iterator != $_productCollection->count()): ?>
+            <?php if ($_iterator % 6 == 0 && $_iterator != $_productCollection->count()): ?>
         </div>
         <div class="row">
             <?php endif; ?>

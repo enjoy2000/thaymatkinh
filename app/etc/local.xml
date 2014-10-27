@@ -42,8 +42,8 @@
                 <connection>
                     <host><![CDATA[localhost]]></host>
                     <username><![CDATA[root]]></username>
-                    <password><![CDATA[ChimViet123!@#]]></password>
-                    <dbname><![CDATA[nhthalp7_dev]]></dbname>
+                    <password><![CDATA[]]></password>
+                    <dbname><![CDATA[nhthalp7_fl2]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
