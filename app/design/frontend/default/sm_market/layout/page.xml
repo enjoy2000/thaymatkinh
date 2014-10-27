@@ -72,6 +72,9 @@ Default layout, loads most of the pages
 			<block type="core/text_list" name="after_body_start" as="after_body_start"/>
             <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml" />
             <block type="page/html_header" name="header" as="header">
+                <block type="cms/block" name="header_info" as="header_info">
+                    <action method="setBlockId"><block_id>header_info</block_id></action>
+                </block>
 				<block type="searchboxpro/list" name="searchbox" template="sm/searchboxpro/default.phtml" />
 				<block type="cartpro/cart_cartpro" name="linkscartpro" template="sm/cartpro/checkout/cart/linkscartpro.phtml">
 				</block>

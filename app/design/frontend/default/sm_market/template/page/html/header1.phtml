@@ -51,6 +51,9 @@ global $var_yttheme;
             </a>
         </div>
         <div class="header-middle-right col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="header-info">
+                <?php echo $this->getChildHtml('header_info') ?>
+            </div>
             <?php if ($this->getChildHtml('searchbox')) { ?>
                 <div class="head-searchbox">
                     <?php echo $this->getChildHtml('searchbox') ?>

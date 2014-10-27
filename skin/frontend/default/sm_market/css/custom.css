@@ -37,3 +37,6 @@ div.product-essential{font-size:13px}
 .services-home h2{font-size:200%;border-bottom:solid 1px #ccc;color:#444;font-weight:700}
 .services-home h2 > span{padding-bottom:5px;border-bottom:solid 2px #1abc9c;display:inline-block}
 .services-home .products-grid .item{min-height:300px}
+.products-grid .item .product-name{line-height:1.2em;height:2.4em;}
+.services-home .products-grid .item .product-name{height:4.8em;}
+.yt-header-middle .logo{text-align:center;}
