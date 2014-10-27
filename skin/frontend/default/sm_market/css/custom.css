@@ -44,3 +44,6 @@ div.product-essential{font-size:13px}
 #yt_header .yt-header-middle .logo{padding:25px 0;}
 #yt_header .yt-header-middle .header-info{margin-left:-15px;color:#1abc9c;font-style:italic;}
 #yt_header .yt-header-middle .header-info p.company-name{font-weight:bold;font-size:200%;font-style:normal;}
+@media (max-width: 991px){
+    #yt_header .yt-header-middle .header-info{margin-left:0;}
+}
