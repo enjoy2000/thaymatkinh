@@ -63,7 +63,7 @@ global $var_yttheme;
 
 <body id="bd" class="<?php echo $var_yttheme->template ?> <?php echo $bg_image;?> <?php if( $var_yttheme->getParam('layoutstyle') == '2' ){echo "layout-boxed";}?> <?php echo $this->getBodyClass();?> <?php echo $classHome;?>">
 <?php echo $this->getChildHtml('after_body_start') ?>
-    <div id="yt_wrapper">
+    <div id="yt_wrapper" class="container">
     
         <!-- BEGIN: Header -->
 		<div id="yt_header" class="yt-header wrap <?php echo $classHeader; ?>">        	
@@ -107,21 +107,21 @@ global $var_yttheme;
         	</div>
          </div>      
         <!-- END: content -->
-        
-        <!-- BEGIN: footer -->
-        <div id="yt_footer" class="yt-footer wrap">
-        	<?php echo $this->getChildHtml('footer') ?>
-        </div>
-        <!-- END: footer -->
-        <?php 
-        if( Mage::getSingleton('cms/page')->getIdentifier() == 'home'  && 
-                        Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms' && $var_yttheme->getParam('showPopup') == 1  ) { 
-        ?>
-            <?php echo $this->getChildHtml('popup_location') ?>
-        <?php } ?>
-
-		<?php echo $this->getChildHtml('before_body_end') ?>
-        <?php echo $this->getAbsoluteFooter() ?>
     </div>
+
+<!-- BEGIN: footer -->
+<div id="yt_footer" class="yt-footer wrap">
+    <?php echo $this->getChildHtml('footer') ?>
+</div>
+<!-- END: footer -->
+<?php
+if( Mage::getSingleton('cms/page')->getIdentifier() == 'home'  &&
+    Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms' && $var_yttheme->getParam('showPopup') == 1  ) {
+    ?>
+    <?php echo $this->getChildHtml('popup_location') ?>
+<?php } ?>
+
+<?php echo $this->getChildHtml('before_body_end') ?>
+<?php echo $this->getAbsoluteFooter() ?>
 </body>
 </html>

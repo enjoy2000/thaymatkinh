@@ -29,8 +29,8 @@ div.sitemap ul > li > ul{margin-left:20px}
 form#search_mini_form .jqTransformSelectWrapper span,form#search_mini_form .jqTransformSelectWrapper ul li a{color:#1abc9c}
 form#search_mini_form .jqTransformSelectWrapper ul li a:hover{color:#fff;background-color:#1abc9c}
 div.product-essential{font-size:13px}
-.upper-footer .google-maps{position:relative;padding-bottom:50%;overflow:hidden}
-.upper-footer .google-maps iframe{position:absolute;top:0;left:0;width:100%!important;height:150px!important}
+.upper-footer .google-maps{position:relative;padding-bottom:110%;overflow:hidden}
+.upper-footer .google-maps iframe{position:absolute;top:0;left:0;width:100%!important;height:100%!important}
 .services-home{margin-top:50px}
 .services-home #yt_wrapper .category-products .yt-products-container{margin-top:0}
 .services-home .product-name a{font-size:90%;line-height:105%}
@@ -42,8 +42,10 @@ div.product-essential{font-size:13px}
 .yt-header-middle .logo{text-align:center;}
 #yt_header .yt-header-middle{padding: 10px 0;}
 #yt_header .yt-header-middle .logo{padding:25px 0;}
-#yt_header .yt-header-middle .header-info{margin-left:-15px;color:#1abc9c;font-style:italic;}
-#yt_header .yt-header-middle .header-info p.company-name{font-weight:bold;font-size:200%;font-style:normal;}
+#yt_header .yt-header-middle .header-info{margin-left:-15px;font-style:italic;}
+#yt_header .yt-header-middle .header-info p.company-name{font-weight:bold;font-size:200%;font-style:normal;color:#1abc9c;}
 @media (max-width: 991px){
     #yt_header .yt-header-middle .header-info{margin-left:0;}
 }
+body#bd{background-color:#d5d5d5;}
+body#bd > div#yt_wrapper.container{padding:0;background-color:#fff;}
