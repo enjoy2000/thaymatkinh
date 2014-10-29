@@ -50,3 +50,8 @@ div.product-essential{font-size:13px}
 body#bd{background-color:#d5d5d5;}
 body#bd > div#yt_wrapper.container{padding:0;background-color:#fff;}
 #yt_header_right .banner-righthome+.banner-righthome{margin-top:19px;}
+.banner-home-right-wrap{float:right;width:30%;}
+@media (max-width: 767px){
+    .banner-home-right-wrap{display:none;}
+    .slideshow-wrap{width: 100%;margin-right: 0;margin-top: 10px;}
+}
