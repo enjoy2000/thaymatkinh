@@ -113,9 +113,9 @@ if( Mage::getSingleton('cms/page')->getIdentifier() == 'home'  &&
             <?php } ?>
             
             <?php if($this->getLayout()->createBlock('cms/block')->setBlockId('banner-header-right')->toHtml()) { ?>
-            <!-- <div class="banner-home-right-wrap"> -->
+            <div class="banner-home-right-wrap">
                 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banner-header-right')->toHtml(); ?>
-            <!-- </div> -->
+            </div>
             <?php } ?>
             <?php if($this->getLayout()->createBlock('cms/block')->setBlockId('block-policy')->toHtml()) { ?>
          

@@ -49,3 +49,4 @@ div.product-essential{font-size:13px}
 }
 body#bd{background-color:#d5d5d5;}
 body#bd > div#yt_wrapper.container{padding:0;background-color:#fff;}
+#yt_header_right .banner-righthome+.banner-righthome{margin-top:19px;}
