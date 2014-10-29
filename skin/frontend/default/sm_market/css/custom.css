@@ -57,4 +57,12 @@ body#bd > div#yt_wrapper.container{padding:0;background-color:#fff;}
     .header-info{display:none;}
 }
 #yt_header #nav > li.level0{border-right:none;}
+#yt_header #nav > li.level0 > a{font-weight:bold;}
+.jqTransformSelectWrapper ul > li:nth-child(4),
+.jqTransformSelectWrapper ul > li:nth-child(10),
+.jqTransformSelectWrapper ul > li:nth-child(16),
+.jqTransformSelectWrapper ul > li:nth-child(22),
+.jqTransformSelectWrapper ul > li:nth-child(28),
+.jqTransformSelectWrapper ul > li:nth-child(35)
+{font-weight:bold;}
 body.cms-home #yt_header #nav{min-height:337px;border-right: solid 1px #ddd;}
